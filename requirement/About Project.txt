@@ -1,0 +1,35 @@
+cryptoexpocloud.com
+
+
+
+fonts:
+https://fonts.google.com/specimen/Press+Start+2P?category=Display,Monospace&preview.text=cryptocloudexpo&preview.text_type=custom
+https://fonts.google.com/specimen/Rubik?preview.text=cryptocloudexpo&preview.text_type=custom
+
+The logo should be in the top left corner, also add the word Crypto Cloud Expo to the logo in pixel font. The site should preferably be designed not in bright colors, if possible limit yourself to 3 colors that will complement each other (for example, black, white, yellow). The rest of the fonts should be consistent with each other. Do not be afraid to be creative in the design. Combine fonts to make them look presentable
+
+1!)About Event
+Crypto Cloud Expo is the blockchain conference network bringing together the key players of crypto industry and experts to redefine the future of finance. The edition of the Crypto Coin Expo will take place during on October 5, 2023 in Dubai, with the world’s top crypto companies and blockchain entrepreneurs. Today, UAE, specifically Dubai is gearing up to become a global crypto hub. Thus, Crypto Cloud Expo will be the gathering in the region on behalf of the world of blockchain and cryptocurrency, with a wide range of topics focused on the financial technologies of the future, extensive networking opportunities and participation from more than 40 countries.
+
+2!) date: October 5, 2023 at 6:30 pm. place - Dubai, ATLANTIS, THE PALM. 
+
+3!) countdown (pixel style and in the color of the site style) 
+
+4!)Discussion Topics: 
+Identifying the gamechanging trends in the web 3.0 ecosystem 
+1)WHAT WEB 3.0 MEANS FOR ENTERPRISES (Sunny Lu)
+2)VALUE CREATION IN THE METAVERSE (Gracy Chen)
+3)THE ROLE OF STABLECOINS IN A DECENTRALIZED ECOSYSTEM (Nena Dokuzov & Jean Charles Gaudechon)
+4)DAOS: NEW BREED OF INTERNET-NATIVE ORGANIZATIONS (Max Kordek)
+5)MAXIMIZING ESG IMPACT WITH BLOCKCHAIN (Helen Hai)
+6)BRIDGING DEFI AND CEFI (Jason Allegrante)
+7)WEB 3 GAMING: THE NEW FRONTIER? (Sunny Lu)
+8)DECRYPTING THE REGULATORY LANDSCAPE OF VIRTUAL ASSETS (Reece Merrick)
+9)CENTRAL BANK DIGITAL CURRENCIES, AND CROSS-BORDER PAYMENTS (Mohammed Alblooshi)
+10)WEB 3: THE FUTURE IS HERE AND NOW (Sunny Lu)
+11)NFT MARKET OVERVIEW: TRENDS & OPPORTUNITIES (Alex Zinder & Nicole Purin) 
+12)INTEROPERABILITY - CHALLENGES AND OPPORTUNITIES (Dina Sam'an)
+
+5!)speakers (4 people in one line. add a pixel background like circles or squares. classic font for names)
+
+6!)sponsors (4 sponsors in one line. classic font for names)
