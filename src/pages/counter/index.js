@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import CountUp from "react-countup"
 
 const CounterContainer = styled.div`
     margin: 50px;
@@ -31,19 +32,27 @@ const Counter = () => {
         <CounterContainer>
             <CounterBody>
                 <CounterSection>
-                    <CounterNumber>10000+</CounterNumber>
+                    <CounterNumber>
+                        <CountUp start={0} end={10000} duration={20} />+
+                    </CounterNumber>
                     <CounterName>Visitors</CounterName>
                 </CounterSection>
                 <CounterSection>
-                    <CounterNumber>80+</CounterNumber>
+                    <CounterNumber>
+                        <CountUp start={0} end={80} duration={5} />+
+                    </CounterNumber>
                     <CounterName>Companies</CounterName>
                 </CounterSection>
                 <CounterSection>
-                    <CounterNumber>60+</CounterNumber>
+                    <CounterNumber>
+                        <CountUp start={0} end={60} duration={3} />+
+                    </CounterNumber>
                     <CounterName>Speakers</CounterName>
                 </CounterSection>
                 <CounterSection>
-                    <CounterNumber>30+</CounterNumber>
+                    <CounterNumber>
+                        <CountUp start={0} end={30} duration={2} />+
+                    </CounterNumber>
                     <CounterName>countries</CounterName>
                 </CounterSection>
             </CounterBody>
