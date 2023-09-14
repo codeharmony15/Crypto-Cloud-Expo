@@ -1,14 +1,14 @@
 import React from "react";
 import styled from 'styled-components';
 
-const Flip_Card =styled.div`
+const FlipCard =styled.div`
     background-color: transparent;
     width: 150px;
     height: 150px;
     perspective: 1000px;
     margin: 20px;
 `
-const Flip_Card_Innder =  styled.div`
+const FlipCardInnder =  styled.div`
     position: relative;
     width: 100%;
     height: 100%;
@@ -21,7 +21,7 @@ const Flip_Card_Innder =  styled.div`
         transform: rotateY(180deg);
     }
 `
-const Flip_Card_Front = styled.div`
+const FlipCardFront = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
@@ -31,7 +31,7 @@ const Flip_Card_Front = styled.div`
     backface-visibility: hidden;
     color: black;
 `
-const Flip_Card_Back = styled.div`
+const FlipCardBack = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,18 +54,18 @@ const Img = styled.img`
     width :  150px;
     border-radius : 12px;
 `
-const Flip_Card_Name = styled.h1`
+const FlipCardName = styled.h1`
     font-size: 11px;
     margin: 0;
     line-height: 1.2;
     text-transform: uppercase;
 `
-const Flip_Card_Number = styled.p`
+const FlipCardNumber = styled.p`
     font-size: 16px;
     margin: 0.5rem 0;
     font-weight: bolder;
 `
-const Flip_Card_Website = styled.button`
+const FlipCardWebsite = styled.button`
     background-color: #e50134;
     border: 1px solid #e50134;
     color: white;
@@ -85,18 +85,22 @@ function Card ({
     name,
     number
 }) {
-    return(<Flip_Card>
-        <Flip_Card_Innder>
-            <Flip_Card_Front>
-               <Img src ={src} />
-            </Flip_Card_Front>
-            <Flip_Card_Back>
-                <Flip_Card_Name>{name}</Flip_Card_Name> 
-                <Flip_Card_Number>{number}</Flip_Card_Number> 
-                <Flip_Card_Website>Visit Website</Flip_Card_Website>
-            </Flip_Card_Back>
-        </Flip_Card_Innder>
-    </Flip_Card>)
+    return(
+        <>
+            <FlipCard>
+                <FlipCardInnder>
+                    <FlipCardFront>
+                    <Img src ={src} />
+                    </FlipCardFront>
+                    <FlipCardBack>
+                        <FlipCardName>{name}</FlipCardName> 
+                        <FlipCardNumber>{number}</FlipCardNumber> 
+                        <FlipCardWebsite>Visit Website</FlipCardWebsite>
+                    </FlipCardBack>
+                </FlipCardInnder>
+            </FlipCard>
+        </>
+    )
 }
 
 export default Card

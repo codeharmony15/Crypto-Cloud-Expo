@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Card from "../../components/Card"
 import Button from "../../components/Button"
+import { devices } from "../../constants"
 
 const PartnerSection = styled.section`
     width: 100%;
@@ -10,16 +11,22 @@ const PartnerSection = styled.section`
 const PartnerLetterContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    @media only screen and ${devices.xs} {
+        flex-direction: column;
+    }
+    @media only screen and ${devices.lg} {
+        flex-direction: row;
+    }
 `
 const PartnerContainer = styled.div`
     max-width: 1200px;
-    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 `
 
 const PartnerLetter = styled.div`
     margin-bottom: 45px;
+    text-align: center;
 `
 const PartnerTitle = styled.div`
     font-size: 47px;
@@ -59,21 +66,23 @@ const PartnerSliderContainer = styled.div`
     position: relative;
 `
 const PartnerSliderContainerLeftButton = styled.button`
-    position: absolute;
-    top: 50%;
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
     left: -25px;
 `
 const PartnerSliderGroup = styled.div`
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 `
 const PartnerSliderPart = styled.div`
-    width: 100%;
 `
 
 const PartnerSliderContainerRightButton = styled.button`
-    position: absolute;
-    top: 50%;
-    right: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
 `
 const CommunitySection = styled.section`
     width: 100%;
@@ -122,7 +131,7 @@ const Partner = () => {
                         </PartnerLetterButtonGroup>
                     </PartnerLetterContainer>
                     <PartnerSliderContainer>
-                        <PartnerSliderContainerLeftButton></PartnerSliderContainerLeftButton>
+                        <PartnerSliderContainerLeftButton className="prev">&#10094;</PartnerSliderContainerLeftButton>
                         <PartnerSliderGroup>
                             <PartnerSliderPart>
                                 <Card
@@ -185,7 +194,7 @@ const Partner = () => {
                                 />
                             </PartnerSliderPart>
                         </PartnerSliderGroup>
-                        <PartnerSliderContainerRightButton></PartnerSliderContainerRightButton>
+                        <PartnerSliderContainerRightButton className="next">&#10095;</PartnerSliderContainerRightButton>
                     </PartnerSliderContainer>
                 </PartnerContainer>
             </PartnerSection>

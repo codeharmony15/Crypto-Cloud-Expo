@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import SpeakerOne from "../../components/SpeakerOne"
+import { devices } from "../../constants"
 
 const SpeakerSection = styled.section`
     width: 100%;
@@ -8,16 +9,24 @@ const SpeakerSection = styled.section`
 const SpeakerLetterContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    @media only screen and ${devices.xs} {
+        flex-direction: column;
+    }
+    @media only screen and ${devices.lg} {
+        flex-direction: row;
+    }
 `
 const SpeakerContainer = styled.div`
     max-width: 1200px;
-    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 `
 
 const SpeakerLetter = styled.div`
     margin-bottom: 45px;
+    @media only screen and ${devices.xs} {
+        text-align: center;
+    }
 `
 const SpeakerTitle = styled.div`
     font-size: 47px;
@@ -59,21 +68,23 @@ const SpeakerSliderContainer = styled.div`
     position: relative;
 `
 const SpeakerSliderContainerLeftButton = styled.button`
-    position: absolute;
-    top: 50%;
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
     left: -25px;
 `
 const SpeakerSliderGroup = styled.div`
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 `
 const SpeakerSliderPart = styled.div`
-    width: 100%;
 `
 
 const SpeakerSliderContainerRightButton = styled.button`
-    position: absolute;
-    top: 50%;
-    right: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
 `
 const ViewButtonContainer = styled.div`
     text-align: center;
@@ -115,7 +126,7 @@ const Speaker = () => {
                     </SpeakerLetterButtonGroup>
                 </SpeakerLetterContainer>
                 <SpeakerSliderContainer>
-                    <SpeakerSliderContainerLeftButton></SpeakerSliderContainerLeftButton>
+                    <SpeakerSliderContainerLeftButton className="prev">&#10094;</SpeakerSliderContainerLeftButton>
                     <SpeakerSliderGroup>
                         <SpeakerSliderPart>
                             <SpeakerOne
@@ -178,7 +189,7 @@ const Speaker = () => {
                             />
                         </SpeakerSliderPart>
                     </SpeakerSliderGroup>
-                    <SpeakerSliderContainerRightButton></SpeakerSliderContainerRightButton>
+                    <SpeakerSliderContainerRightButton className="next">&#10095;</SpeakerSliderContainerRightButton>
                 </SpeakerSliderContainer>
                 <ViewButtonContainer><ViewButton>View Speaker</ViewButton></ViewButtonContainer>
             </SpeakerContainer>

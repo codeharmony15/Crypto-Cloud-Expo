@@ -4,7 +4,6 @@ import styled, {keyframes} from 'styled-components';
 const Container = styled.div`
     height: 280px;
     max-width : 360px;
-    width: 32%;
     overflow: hidden;
     border-radius: 10px;
     overflow: hidden;

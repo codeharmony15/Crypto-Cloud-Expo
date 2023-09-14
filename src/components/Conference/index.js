@@ -1,9 +1,8 @@
 import React from 'react';
-import styled, {keyframes} from 'styled-components';
+import styled from 'styled-components';
 
 const Container = styled.div`
     max-width : 360px;
-    width: 32%;
     overflow: hidden;
     border-radius: 5px;
     overflow: hidden;
@@ -25,23 +24,6 @@ const Img = styled.img`
     width: 100%;
     transition: .3s ease-in;
 `
-const movefill = keyframes`
-  from {
-    transform: translateY(50%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-`
-const moveempty = keyframes`
-  from {
-    transform: translateY(0%);
-  }
-  to {
-    transform: translateY(50%);
-  }
-`
-
 const TextContainer =  styled.div`
     margin-top: -5px;
     bottom: 0;

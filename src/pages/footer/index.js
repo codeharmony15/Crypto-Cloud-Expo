@@ -45,7 +45,7 @@ function Footer () {
                 <DateCard background="seconds" type="Seconds" text={8} />
             </DateContainer>
             <ButtonContainer>
-                <Button name ="Become Sponsar" background ={"second"}/>
+                {/* <Button name ="Become Sponsar" background ={"second"}/> */}
                 <Button name ="Register Now" marginX = {16}/>
             </ButtonContainer>
         </Container>

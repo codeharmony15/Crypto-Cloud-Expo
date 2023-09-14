@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Button from "../../components/Button"
+import { devices } from "../../constants"
 
 const ExhibitContainer = styled.div`
     background-image: url("images/Exhibit.png");
@@ -13,17 +13,41 @@ const ExhibitContainer = styled.div`
 const ExhibitRow = styled.div`
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 `
 const ExhibitLeft = styled.div`
+    width: 50%;
     display: flex;
     flex-direction: column;
+    @media only screen and ${devices.xs} {
+        width: 100%;
+    }
+    @media only screen and ${devices.lg} {
+        width: 50%;
+    }
 `
-const ExhibitRight = styled.div``
+const ExhibitRight = styled.div`
+    width: 50%;
+    @media only screen and ${devices.xs} {
+        width: 100%;
+    }
+    @media only screen and ${devices.lg} {
+        width: 50%;
+    }
+`
 
 const ExhibitLeftTitle = styled.div`
     margin-bottom: 45px;
     font-size: 40px;
     font-weight: bold;
+    @media only screen and ${devices.xs} {
+        margin-top: 30px;
+        text-align: center;
+    }
+    @media only screen and ${devices.lg} {
+        margin-top: 0px;
+        text-align: left;
+    }
 `
 const ExhibitLeftDescription = styled.div`
     margin-bottom: 1rem;
@@ -34,7 +58,7 @@ const Exhibit = () => {
         <ExhibitContainer>
             <ExhibitRow>
                 <ExhibitRight>
-                    <img src="images/CED-images-2.png" style={{width: '42vw', height: 'auto'}} />
+                    <img alt="" src="images/CED-images-2.png" style={{width: '100%', height: 'auto'}} />
                 </ExhibitRight>
                 <ExhibitLeft>
                     <ExhibitLeftTitle>WHY TO Exhibit?</ExhibitLeftTitle>

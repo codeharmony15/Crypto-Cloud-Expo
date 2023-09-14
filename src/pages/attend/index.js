@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Button from "../../components/Button"
+import { devices } from "../../constants"
 
 const AttendContainer = styled.div`
     background-image: url("images/attend.png");
@@ -14,17 +15,41 @@ const AttendContainer = styled.div`
 const AttendRow = styled.div`
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 `
 const AttendLeft = styled.div`
     display: flex;
     flex-direction: column;
+    width: 50%;
+    @media only screen and ${devices.xs} {
+        width: 100%;
+    }
+    @media only screen and ${devices.lg} {
+        width: 50%;
+    }
 `
-const AttendRight = styled.div``
+const AttendRight = styled.div`
+    text-align: center;
+    @media only screen and ${devices.xs} {
+        margin-top: 50px;
+        width: 100%;
+    }
+    @media only screen and ${devices.lg} {
+        margin-top: 0px;
+        width: 50%;
+    }
+`
 
 const AttendLeftTitle = styled.div`
     margin-bottom: 45px;
     font-size: 40px;
     font-weight: bold;
+    @media only screen and ${devices.xs} {
+        text-align: center;
+    }
+    @media only screen and ${devices.lg} {
+        text-align: left;
+    }
 `
 const AttendLeftDescription = styled.div`
     margin-bottom: 1rem;
@@ -32,6 +57,13 @@ const AttendLeftDescription = styled.div`
 
 const AttendLeftButton = styled.div`
     margin-top: 10px;
+    @media only screen and ${devices.xs} {
+        display: flex;
+        justify-content: center;
+    }
+    @media only screen and ${devices.lg} {
+        display: block;
+    }
 `
 
 const Attend = () => {
@@ -47,7 +79,7 @@ const Attend = () => {
                     </AttendLeftButton>
                 </AttendLeft>
                 <AttendRight>
-                    <img src="images/CED-images-2.png" style={{width: '42vw', height: 'auto'}} />
+                    <img alt="" src="images/CED-images-2.png" style={{width: '100%', height: 'auto'}} />
                 </AttendRight>
             </AttendRow>
         </AttendContainer>

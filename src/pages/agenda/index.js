@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Button from "../../components/Button"
+import { devices } from "../../constants"
 
 const AgendaSection = styled.section`
     width: 100%;
@@ -13,7 +14,6 @@ const AgendaSection = styled.section`
 `
 const AgendaContainer = styled.div`
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 `
@@ -21,22 +21,41 @@ const AgendaTitle = styled.div`
     text-transform: uppercase;
     font-size: 47px;
     margin-bottom: 45px;
+    @media only screen and ${devices.xs} {
+        text-align: center;
+    }
+    @media only screen and ${devices.lg} {
+        text-align: left;
+    }
 `
 const AgendaRow = styled.div`
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    @media only screen and ${devices.xs} {
+        flex-direction: column;
+    }
+    @media only screen and ${devices.lg} {
+        flex-direction: row;
+    }
 `
 const AgendaLeft = styled.div`
+    width: 30%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    @media only screen and ${devices.xs} {
+        flex-direction: row;
+    }
+    @media only screen and ${devices.lg} {
+        flex-direction: column;
+    }
 `
 const AgendaLeftDay = styled.div`
 
 `
 
 const AgendaRight = styled.div`
-    
+    width: 70%;
 `
 const AgendaDayComponent = styled.div`
     width: 160px;
@@ -51,7 +70,6 @@ const AgendaDayComponent = styled.div`
         background: linear-gradient(100.07deg, #2F3D77 0%, #E50134 176.51%);
         color: white;
     }
-    margin-right: 150px;
 `
 const AgendaDayTitle = styled.div`
     font-size: 25px;

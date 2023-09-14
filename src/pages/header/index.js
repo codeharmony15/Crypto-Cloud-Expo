@@ -52,8 +52,8 @@ function Header () {
     return(<HeaderContainer>
             <Container>
                 <LogoContainer>
-                    <Img src= "images/logo.svg" />
-                    <div style={{fontSize : '20px', color : 'white', fontWeight : 600, fontFamily: 'monospace', marginLeft : '10px'}}>CryptoCloudExpo</div>
+                    <Img src= "images/LOGO.png" />
+                    <div style={{fontSize : '24px', color : 'white', fontWeight : "bolder", fontFamily: 'monospace', marginLeft : '10px'}}>CryptoCloudExpo</div>
                 </LogoContainer>
                 <HeaderContentContainer>
                     <HeaderContent>About Us</HeaderContent>
@@ -64,7 +64,7 @@ function Header () {
                     <HeaderContent>Floor plan</HeaderContent>
                 </HeaderContentContainer>
                 <ButtonContainer>
-                    <Button background="second" name  = "Become Sponsor" />
+                    {/* <Button background="second" name  = "Become Sponsor" /> */}
                     <Button name="Register Now" marginX ={16}/>
                 </ButtonContainer>
             </Container>

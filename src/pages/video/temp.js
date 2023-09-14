@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { devices } from "../../constants"
 
 const VideoSection = styled.div`
     width: 100%;
@@ -10,11 +11,18 @@ const VideoSection = styled.div`
 const VideoContainer = styled.div`
     max-width: 1200px;
     display: flex;
+    flex-wrap: wrap;
 `
 const VideoLeft = styled.div`
-    width: 50%;
+    width: 47%;
     position: relative;
     padding: 0 10px;
+    @media only screen and ${devices.xs} {
+        width: 97%;
+    }
+    @media only screen and ${devices.lg} {
+        width: 47%;
+    }
 `
 const VideoImage = styled.img`
     width: 100%;
@@ -33,8 +41,16 @@ const VideoPlay = styled.img`
 `
 
 const VideoRight = styled.div`
-    width: 50%;
+    width: 47%;
     padding: 0 10px;
+    @media only screen and ${devices.xs} {
+        width: 97%;
+        text-align: center;
+    }
+    @media only screen and ${devices.lg} {
+        width: 47%;
+        text-align: left;
+    }
 `
 const VideoTitle = styled.h1`
     margin-bottom: 45px;

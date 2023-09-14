@@ -32,9 +32,6 @@ const MapRow = styled.div`
     align-items: center;
     justify-content: space-around;
 `
-const MapView = styled.div`
-
-`
 const MapText = styled.div`
     color: white;
 `
@@ -54,7 +51,7 @@ const Map = () => {
             <MapOverlay></MapOverlay>
             <MapContainer>
                 <MapRow>
-                    <iframe width="570" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Festival%20Arena%20%E2%80%93%20Dubai%20Festival%20City,%20UAE&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                    <iframe title="map" width="570" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Festival%20Arena%20%E2%80%93%20Dubai%20Festival%20City,%20UAE&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" marginheight="0" marginwidth="0"></iframe>
                     <MapText>
                         <MapTitle>in person event</MapTitle>
                         <MapContent><strong>Venue</strong>: Festival Arena – Dubai, ATLANTIS, THE PALM</MapContent>

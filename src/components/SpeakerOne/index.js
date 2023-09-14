@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const SpeakerOneContainer = styled.div`
     cursor: pointer;
-    max-width: 250px;
+    width: 250px;
     text-align: center;
     min-height: 350px;
     border: 2px solid #c8f2f347;
@@ -11,7 +11,6 @@ const SpeakerOneContainer = styled.div`
     background-color: #c8f2f347;
     margin: 10px;
     margin-bottom: 30px;
-    width: 100%;
     &:hover img {
         transform: scale(1.1);
         transition: .3s ease-in;

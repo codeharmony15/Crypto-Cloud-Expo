@@ -10,7 +10,6 @@ const InsightSection = styled.section`
 `
 const InsightContainer = styled.div`
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 `
@@ -23,6 +22,7 @@ const InsightTitle = styled.h1`
 const InsightList = styled.div`
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 `
 
 const Insight = () => {
